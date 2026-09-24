@@ -1,10 +1,20 @@
 # Tickers to track. Use Yahoo Finance symbols (e.g. AAPL, MSFT, VOD.L, BP.L, 7203.T).
-# `holding` is optional: if you already own the stock, set the price you paid
-# so the tool can give you a personalized stop-loss / take-profit sell price.
+#
+# `holding` is optional: only add it once you actually own the stock, with
+# the price you paid, so the tool can give you a personalized stop-loss /
+# take-profit sell price. Leave it off to just watch a stock and get BUY
+# signals when it looks strong.
+#
+# This starter list is a spread of well-known, large, liquid companies
+# across different countries and industries so the reports mean something
+# while you're learning how this tool works. It is NOT investment advice -
+# swap in whatever companies you're actually interested in.
 tickers:
-  - symbol: AAPL
-  - symbol: MSFT
-  - symbol: VOD.L
-    holding:
-      shares: 100
-      cost_basis: 72.50
+  - symbol: AAPL      # Apple - US, technology
+  - symbol: MSFT      # Microsoft - US, technology
+  - symbol: AMZN      # Amazon - US, retail/cloud
+  - symbol: JNJ       # Johnson & Johnson - US, healthcare
+  - symbol: SHEL.L    # Shell - UK, energy
+  - symbol: AZN.L     # AstraZeneca - UK, pharmaceuticals
+  - symbol: 7203.T    # Toyota - Japan, automotive
+  - symbol: NESN.SW   # Nestle - Switzerland, consumer goods
