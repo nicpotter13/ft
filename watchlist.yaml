@@ -1,0 +1,10 @@
+# Tickers to track. Use Yahoo Finance symbols (e.g. AAPL, MSFT, VOD.L, BP.L, 7203.T).
+# `holding` is optional: if you already own the stock, set the price you paid
+# so the tool can give you a personalized stop-loss / take-profit sell price.
+tickers:
+  - symbol: AAPL
+  - symbol: MSFT
+  - symbol: VOD.L
+    holding:
+      shares: 100
+      cost_basis: 72.50
